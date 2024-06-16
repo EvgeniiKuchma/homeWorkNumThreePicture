@@ -10,14 +10,14 @@ namespace homeWorkNumThreePicture
     {
         static void Main(string[] args)
         {
-            int totalNumberOfPicture = 52;
-            int numberOfPictureInARow = 3;
-            int numberOfFilledRows = totalNumberOfPicture / numberOfPictureInARow;
-            int PicturesOverARow = totalNumberOfPicture % numberOfPictureInARow;
+            int images = 52;
+            int pictureInRow = 3;
+            int filledRows = images / pictureInRow;
+            int overImages = images % pictureInRow;
 
             Console.WriteLine($"Количество полных рядов картин равно " +
-                $"{numberOfFilledRows}, " +
-                $"количество картин вне полного ряда {PicturesOverARow}.");
+                $"{filledRows}, " +
+                $"количество картин вне полного ряда {overImages}.");
         }
     }
 }
